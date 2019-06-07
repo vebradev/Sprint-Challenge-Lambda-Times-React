@@ -25,7 +25,7 @@ const Tabs = props => {
 
 // Make sure to use PropTypes to validate your types!
 
-Tab.propTypes = {
+Tabs.propTypes = {
   tab: pt.string,
   selectTabHandler: pt.func,
   selectedTab: pt.string
