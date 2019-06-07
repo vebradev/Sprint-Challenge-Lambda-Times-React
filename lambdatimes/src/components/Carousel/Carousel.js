@@ -14,7 +14,6 @@ export default class Carousel extends Component {
   }
 
   leftClick = () => {
-    console.log(this.state.count);
     if (this.state.count === 0) {
       this.setState({ count: 3 });
     } else {
@@ -23,7 +22,6 @@ export default class Carousel extends Component {
   };
 
   rightClick = () => {
-    console.log(this.state.count);
     if (this.state.count !== this.state.images.length - 1) {
       this.setState({ count: this.state.count + 1 });
     } else {
@@ -36,6 +34,7 @@ export default class Carousel extends Component {
       <img
         src={this.state.images[this.state.count]}
         style={{ display: "block" }}
+        alt="Team Borja!"
       />
     );
   };
